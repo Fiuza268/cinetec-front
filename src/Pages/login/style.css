@@ -1,0 +1,109 @@
+body{
+     background-image: url('../imgs/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.forms {
+    color:white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgba(117, 4, 4, 0.97), rgba(0, 0, 0, 0.97));
+    width: 100px;
+    height: 100px;
+    padding: 200px;
+    /* position: relative; */
+}
+
+.tituloCadUser{
+    font-size: 14pt;
+    /* position: absolute; */
+    width: 200px;
+    margin-top: -85%;
+    margin-left: -50%;
+}
+
+.mb-3{
+    /* position: absolute; */
+    top: 200px;
+    left: 170px;
+    bottom: 100px;
+    right: 150px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.mb-4{
+    /* position: absolute; */
+    top: 270px;
+    left: 170px;
+    bottom: 150px;
+    right: 150px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.input{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+
+.bt-entrar{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 10px 25px;
+    /* position: absolute; */
+    bottom: 150px;
+    right: 170px;
+    left: 170px;
+    
+}
+
+.linkCad{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    font-size: 12pt;
+    padding: 10px 15px;
+    /* position: absolute; */
+    bottom: 60px;
+    right: 200px;
+}
+
+.img_logo{
+    /* position: absolute; */
+    width: 150px;
+    bottom: 360px;
+    left: 170px;
+}
+
+.logoUser{
+    color: white;
+    /* position: absolute; */
+    width: 50px;
+    bottom: 330px;
+    left: 220px;
+}
+
+.pCadUser{
+    color: white;
+    /* position: absolute; */
+    width: 180px;
+    bottom: 80px;
+    right: 160px;
+}
+
+.parteInferior{
+    margin-top: 100px;
+}

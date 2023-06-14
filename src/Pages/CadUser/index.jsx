@@ -3,8 +3,7 @@ import './style.css'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import logo from '../imgs/logocinetec.png'
-import logoUser from '../imgs/LogoUser.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import api from '../../api';
 import swal from 'sweetalert';
@@ -14,7 +13,8 @@ function FormsCad() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [userName, setUserName] = useState('');
-    const [typeUser, setTypeUser] = useState('');
+    const [typeUser, setTypeUser] = useState('Comum');
+    const navigate = useNavigate();
 
     async function handleRegister(event) {
         event.preventDefault();
@@ -33,6 +33,7 @@ function FormsCad() {
             setEmail('');
             setPassword('');
             setUserName('');
+            navigate('/catalog');
         } catch (error) {
             swal(`Erro no cadastro. Tente novamente. \nCodigo Erro ${error}`);
         }
@@ -60,22 +61,17 @@ function FormsCad() {
                     </Form.Group>
                     <Form.Group className="formTypeUser" controlId="formGroupPassword">
                         <Form.Label>Tipo de Usuário </Form.Label>
-                        <select>
-                            <option onChange={(event) => {
-                                setTypeUser(event.target.value)
-                            }} value="Comum">Comum
-                            </option>
-                            <option
-                                onChange={(event) => {
-                                    setTypeUser(event.target.value)
-                                }}
-                                value="Administrador">Administrador
-                            </option>
+                        <select onChange={(event) => {
+                            console.log('event', event.target.value)
+                            setTypeUser(event.target.value);
+                        }}>
+                            <option value="Comum">Comum</option>
+                            <option value="Administrador">Administrador</option>
                         </select>
                     </Form.Group>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '1rem' }}>
                         <Button variant="primary" type='submit' className="btCadUser">Cadastrar-se</Button>{' '}
-                        <Link style={{ padding: '1rem' }} to='/ ' className="linkVoltar">Voltar</Link>{' '}
+                        <Link style={{ padding: '1rem', textDecoration: 'none' }} to='/ ' className="linkVoltar">Voltar</Link>{' '}
                     </div>
                 </Form>
             </div>

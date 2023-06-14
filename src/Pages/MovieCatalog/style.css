@@ -1,0 +1,21 @@
+.catalog_body{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    border: solid 2px black;
+    border-radius: 25px;
+    background-color: gray;
+    width: 22rem;
+    height: 18rem;
+}

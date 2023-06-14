@@ -35,8 +35,7 @@ function FormsCad(){
         	
     }
     return(
-        <div>
-        <center>
+        <div style={display:'Flex', justifyItens: 'center', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}>
         <div className='forms'>
             <div className='logoReact'>
                 <img src= {logo} alt="App-logo" className='img_logo'/>
@@ -64,7 +63,6 @@ function FormsCad(){
             <Link to = '/ 'className="linkVoltar">Voltar</Link>{' '}
         </Form>
         </div>
-        </center>
         </div>
     );
 
